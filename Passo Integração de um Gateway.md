@@ -329,14 +329,17 @@ rails db:migrate
 
 ***parceiros/Teste Pay Checkout***/***editar***
 
-![2025-01-16_08-37.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_08-37.png)
+
+![2025-01-16_08-37](https://github.com/user-attachments/assets/9555195d-f469-43f7-9c11-c8193c1d300a)
+
 
 (modelo)
 
 12. Agora no login usuário (Danilo), conferir se o gateway está disponível
     ***integrações/gateways***
 
-![2025-01-15_21-00.png](/home/angelo/Downloads/Doc_integrar/2025-01-15_21-00.png)
+![2025-01-15_21-00](https://github.com/user-attachments/assets/df674aeb-91a2-4860-8769-de3c2f522192)
+
 
 13.    Cadastro do gateway: 
 
@@ -414,11 +417,12 @@ adicione o gateway no trecho de código:
 
 - esta inclusão (modelo): 
 
-<img src="file:///home/angelo/Downloads/Doc_integrar/2025-01-16_11-53.png" title="" alt="2025-01-16_11-53.png" width="520">
+<img src="https://github.com/user-attachments/assets/fc3e19c8-1d94-418c-a1ad-ec650268422d" title="" alt="2025-01-16_11-53.png" width="520">
 
 - esta inclusão (modelo):
 
-<img title="" src="file:///home/angelo/Downloads/Doc_integrar/2025-01-16_11-55.png" alt="2025-01-16_11-55.png" data-align="inline" width="520">
+<img title="" src="https://github.com/user-attachments/assets/39ad814d-120d-4e65-bac4-bfc8281556d6" alt="2025-01-16_11-55.png" data-align="inline" width="520">
+
 
 17. Criação do controller
 
@@ -465,7 +469,10 @@ adicione o gateway no trecho de código:
   
   - Taxa de Parcelamento
 
-![2025-01-16_12-18.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_12-18.png)
+
+
+![2025-01-16_12-18](https://github.com/user-attachments/assets/921dd13c-fc49-45e9-9684-fd967a9ba30b)
+
 
 20 - Criação do form_config do  Gateway
 
@@ -517,21 +524,27 @@ modelo)
 
 ***Integrações/Gateways***
 
-![2025-01-15_21-00.png](/home/angelo/Downloads/Doc_integrar/2025-01-15_21-00.png)
+![2025-01-15_21-00](https://github.com/user-attachments/assets/b2e47ed3-6e21-4a5e-be08-0c370583db13)
 
 22. Atualização dos arquivos à seguir: 
 
 charge.rb (***app/models/charge.rb***)
 
-![2025-01-16_13-15.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_13-15.png)
+
+![2025-01-16_13-15](https://github.com/user-attachments/assets/60529c1d-f627-42d2-bea3-3cbddbf467d9)
+
 
 external_reference.rb(***models/external_reference.rb***)
 
-![2025-01-16_13-25.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_13-25.png)
+
+![2025-01-16_13-25](https://github.com/user-attachments/assets/9d903443-12b2-49ba-927b-984cdbc9a4c6)
+
 
 installment.rb(***app/models/installment.rb***)
 
-![2025-01-16_13-28.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_13-28.png)
+
+![2025-01-16_13-28](https://github.com/user-attachments/assets/9080a59a-9add-4159-bea2-f4c7397adb36)
+
 
 23. Crie um servidor ngrok
 
@@ -545,27 +558,34 @@ exemplo:
 
 24. N arquivo config em ***app/models***, confirme esta alteração: 
 
-<img title="" src="file:///home/angelo/Downloads/Doc_integrar/2025-01-16_13-46.png" alt="2025-01-16_13-46.png" width="882">
+<img title="" src="https://github.com/user-attachments/assets/bd2e17ea-6545-48d9-a7be-17705153092d" alt="2025-01-16_13-46.png" width="882">
+
+
 
 25. Testar o gateway com um produto, e observar se esta ativo, no ambiente usuario,
 - Produto Y, copie seu link, para verificação no navegador
 
 (imagem demonstrativa)
 
-![2025-01-16_13-09.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_13-09.png)
+![2025-01-16_13-09](https://github.com/user-attachments/assets/90521ec8-d8ce-4ad9-94d8-df999d290a3c)
+
+
 
 - Insira dados bancarios para testes : Pix e Cartão
 26. Após inserção dos dados testar o pagamento de Pix ou Cartão
 
-![2025-01-16_13-50.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_13-50.png)
+![2025-01-16_13-50](https://github.com/user-attachments/assets/3886d226-b719-4976-9d73-ec7a1ff35c72)
+
 
 27. Confirma os logs (***log/kalyst.log***)
     
     (imagem ilustrativa)
     
-    ![2025-01-16_13-58.png](/home/angelo/Downloads/Doc_integrar/2025-01-16_13-58.png)
+![2025-01-16_13-58](https://github.com/user-attachments/assets/4033610b-2f5b-4815-939d-d4be02749ea4)
 
-28. Ajuste as rotas
+
+
+29. Ajuste as rotas
 
 ****config/routes/api_routes.rb****
 
